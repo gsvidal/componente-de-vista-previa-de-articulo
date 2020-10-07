@@ -16,6 +16,7 @@ body {
   font-size: 1.40rem;
   background-color: hsl(210, 46%, 95%);
   height: 100vh;
+  min-height: 645px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +24,8 @@ body {
   color: hsl(212, 23%, 69%);
   font-family: 'Manrope', sans-serif;
   font-weight: 700;
-  min-height: 675px;
-  overflow: hidden;
+  
+  /* overflow: hidden; */
 }
 strong {
   font-weight: 700;
