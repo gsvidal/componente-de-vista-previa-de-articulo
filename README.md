@@ -1,5 +1,4 @@
-# Escuela de Desarrollo Web by Platzi - Article preview component
-# [GitHub-page](https://gsvidal.github.io/componente-de-vista-previa-de-articulo/)
+# Escuela de Desarrollo Web by Platzi - [Article preview component](https://gsvidal.github.io/componente-de-vista-previa-de-articulo/)
 
 
 ![desktop-preview.jpg](https://static.platzi.com/media/user_upload/desktop-preview-948e0f8f-7bf6-42ec-a925-e03f1dde08fd.jpg)
