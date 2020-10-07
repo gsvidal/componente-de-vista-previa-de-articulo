@@ -1,0 +1,235 @@
+/* #author.convert {
+  background-color: hsl(217, 19%, 35%);
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.40rem;
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: hsl(212, 23%, 69%);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  min-height: 675px;
+  overflow: hidden;
+}
+strong {
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 8px 8px 20px hsl(212, 23%, 69%, .25);
+  position: relative;
+}
+
+figure img {
+  width: 100%;  border-top-left-radius: 10px;
+  width: 100%;  border-top-right-radius: 10px;
+}
+.container_info {
+  padding: 28px;
+  padding-bottom: 5px;
+}
+.container_info strong {
+  color: hsl(214, 17%, 51%);
+  font-size: 1.75rem;
+  
+}
+.container_info p {
+  padding: 15px 0;
+}
+
+#author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  /* background-color: hsl(217, 19%, 35%) ; */
+}
+.author-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.author-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 25px;  font-weight: 500;
+
+}
+.author-info strong{
+  font-size: 1.5rem;
+}
+
+#button_share {
+  background-color: hsl(210, 46%, 95%);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 2;
+  
+}
+
+#share-image {
+  /* background-color: hsl(210, 46%, 95%); */
+  margin-top: 8px;
+  margin-left: 8px;
+  z-index: 2;
+}
+
+#share-box {
+  display: none;
+}
+#share-box.showShareBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px;
+  padding-right: 125px;
+  height: 75px;
+  background-color: hsl(217, 19%, 35%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  
+}
+#button_share.convert {
+  background-color: hsl(214, 17%, 51%);
+}
+
+#share-image.filter-arrow-white {
+  
+  filter: 
+  brightness(0) saturate(100%)
+  invert(100%) sepia(0%) saturate(7497%) hue-rotate(170deg) brightness(106%) contrast(100%);
+  
+}
+
+.attribution {
+  /* Uso position: absolute y no con el mismo display flex de body xq el attribution lo quiero pegado a la base, así como el container lo quiero centrado verticalmente del viewport */
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+}
+a {
+  color: rgb(190, 85, 251);
+}
+.frontendmentor {
+  color: hsl(212, 23%, 69%);
+}
+
+@media screen and (min-width: 375px) {
+
+.container {
+  width: 338px;
+}  
+
+}
+
+@media screen and (min-width: 770px) {
+
+body {
+  min-height: 380px;
+}
+  
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 766px;margin: 0;
+
+}
+
+
+.container figure img{
+  width: 300px;
+  height: 295px;
+  object-fit: cover;
+  object-position: left;
+  vertical-align: middle;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  
+  }
+
+.container_info {
+  padding-left: 35px;
+  padding-bottom: 0;
+}
+
+.container_info strong {
+  font-size: 2.25rem;
+}
+#author {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.author-info {
+  padding-right: 170px;
+}
+
+.author-info strong {
+  font-size: 1.5rem;
+}
+#button_share {
+  margin-right: 20px;
+}
+#share-box.showShareBox {
+  /* position: absolute; */
+  bottom: 90px;
+  left: 600px;
+  width: 220px;
+  height: 45px;
+  padding: 0;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0px 5px 10px hsl(217, 19%, 35%, 0.3);
+}
+#share-box.showShareBox img {
+  padding: 7px;
+  width: 3.3rem;
+  height: 3.3rem;
+  
+}
+#share-box.showShareBox p {
+  padding: 9px;
+  font-size: 1.4rem;
+}
+#share-box-triangle.show {
+  width: 30px;
+  height: 30px;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 82px;
+  left: 687px;
+  z-index: 0;
+  transform: rotate(45deg);
+  box-shadow: 3px 3px 10px hsl(217, 19%, 35%, 0.3);
+}
+
+
+}
