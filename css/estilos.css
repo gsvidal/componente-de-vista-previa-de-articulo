@@ -16,7 +16,7 @@ body {
   font-size: 1.40rem;
   background-color: hsl(210, 46%, 95%);
   height: 100vh;
-  min-height: 645px;
+  min-height: 660px;
   display: flex;
   justify-content: center;
   align-items: center;
